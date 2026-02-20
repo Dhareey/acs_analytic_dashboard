@@ -23,12 +23,7 @@ interface QualityMetricsProps {
 }
 
 export function QualityMetrics({ data }: QualityMetricsProps) {
-  const COLORS = [
-    'hsl(var(--chart-1))',
-    'hsl(var(--chart-2))',
-    'hsl(var(--chart-3))',
-    'hsl(var(--chart-4))',
-  ];
+  const COLORS = ['var(--chart-1)', 'var(--chart-2)', 'var(--chart-3)', 'var(--chart-4)'];
 
   return (
     <div className="space-y-4">
@@ -53,7 +48,7 @@ export function QualityMetrics({ data }: QualityMetricsProps) {
                   }}
                   formatter={(value) => `${value}ms`}
                 />
-                <Bar dataKey="time" fill="hsl(var(--chart-4))" radius={[8, 8, 0, 0]} />
+                <Bar dataKey="time" fill="var(--chart-4)" radius={[8, 8, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
           </CardContent>

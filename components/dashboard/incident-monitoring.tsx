@@ -126,7 +126,7 @@ export function IncidentMonitoring({ data }: IncidentMonitoringProps) {
                     borderRadius: '8px',
                   }}
                 />
-                <Bar dataKey="errors" fill="hsl(var(--destructive))" radius={[8, 8, 0, 0]} />
+                <Bar dataKey="errors" fill="var(--destructive)" radius={[8, 8, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
           </CardContent>
@@ -153,9 +153,9 @@ export function IncidentMonitoring({ data }: IncidentMonitoringProps) {
                 <Line
                   type="monotone"
                   dataKey="incidents"
-                  stroke="hsl(var(--chart-5))"
+                  stroke="var(--chart-5)"
                   strokeWidth={2}
-                  dot={{ fill: 'hsl(var(--chart-5))', r: 4 }}
+                  dot={{ fill: 'var(--chart-5)', r: 4 }}
                 />
               </LineChart>
             </ResponsiveContainer>

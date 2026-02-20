@@ -47,7 +47,7 @@ export function UsageAnalytics({ data }: UsageAnalyticsProps) {
                 <Line
                   type="monotone"
                   dataKey="users"
-                  stroke="hsl(var(--primary))"
+                  stroke="var(--primary)"
                   strokeWidth={2}
                   dot={false}
                 />
@@ -74,7 +74,7 @@ export function UsageAnalytics({ data }: UsageAnalyticsProps) {
                     borderRadius: '8px',
                   }}
                 />
-                <Bar dataKey="users" fill="hsl(var(--chart-2))" radius={[8, 8, 0, 0]} />
+                <Bar dataKey="users" fill="var(--chart-2)" radius={[8, 8, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
           </CardContent>
@@ -103,16 +103,16 @@ export function UsageAnalytics({ data }: UsageAnalyticsProps) {
                   type="monotone"
                   dataKey="qa"
                   stackId="1"
-                  stroke="hsl(var(--chart-3))"
-                  fill="hsl(var(--chart-3))"
+                  stroke="var(--chart-3)"
+                  fill="var(--chart-3)"
                   fillOpacity={0.6}
                 />
                 <Area
                   type="monotone"
                   dataKey="live"
                   stackId="1"
-                  stroke="hsl(var(--chart-1))"
-                  fill="hsl(var(--chart-1))"
+                  stroke="var(--chart-1)"
+                  fill="var(--chart-1)"
                   fillOpacity={0.6}
                 />
               </AreaChart>
